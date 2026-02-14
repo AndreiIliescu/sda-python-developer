@@ -1,0 +1,19 @@
+# Comenzi utile
+# pentru a naviga foldere din terminal: cd nume_folder
+# pentru a naviga un folder in spate: cd ..
+# pentru a rula pytest: python -m pytest test_nume_fisier.py
+# pentru a rula toate testele dintr-un folder/modul:
+# python -m pytest nume_folder
+
+
+pip install coverage
+
+coverage run --source="." --omit="*/venv/*" -m pytest
+
+Pentru a genera un raport pentru a vedea cat din cod este acoperit de teste
+coverage report
+sau
+python -m coverage report
+
+Pentru a vedea liniile care lipsesc(nu sunt acoperite de teste)
+python -m coverage report -m

@@ -1,0 +1,28 @@
+[
+    {
+        "type": "FoodProduct",
+        "name": "Apple",
+        "price": 10.19,
+        "quantity": 50,
+        "description": "Red bio apple",
+        "bar_code": 1427685,
+        "expiration_date": "2025-08-17"
+    },
+    {
+        "type": "ElectronicProduct",
+        "name": "Samsung Galaxy A55 5G",
+        "price": 789.99,
+        "quantity": 10,
+        "description": "Smartphone Samsung",
+        "bar_code": 7569128,
+        "warranty_date": "2027-06-14"
+    },
+    {
+        "type": "ClothingProduct",
+        "name": "T-shirt",
+        "price": 79.99,
+        "quantity": 100,
+        "description": "Light Blue cotton T-shirt",
+        "bar_code": 5671362
+    }
+]

@@ -1,0 +1,36 @@
+-- Warehouse program design to store item inventory --
+
+-- Clase --
+-Product - (putem daca vrem sa o facem sa fie clasa abstracta):
+    # Atribute:
+        nume: str
+        pret: float
+        cantitate: int
+        descriere: str
+        code unic (bar code): int
+
+    # Metode:
+    get_total_value() -> returneaza valoarea totala din stoc (pret * cantitate)
+
+-FoodProduct:
+    # Atribute:
+        expiration_date -> data la care expira produsul
+
+    # Metode:
+        is_expired() -> returneaza True daca data in care suntem a trecut de cea de expirare
+
+-Warehouse:
+    # Atribute:
+    nume: str
+    produse -> o lista care contine toate produsele
+
+    # Metode:
+    print_products() -> afiseaza un tabel cu produsele disponibile
+    save_products() -> salveaza produsele intr-un fisier (Pickele, JSON, CSV - la alegerea noastra)
+    load_products() -> incarca produse dintr-un fisier (Pickele, JSON, CSV - la alegerea noastra)
+    add_food_product() -> adaugam un nou food product
+
+        #NOU: @disable_at_night() # Putem adauga produse noi doar in timpul zilei
+        #PLUS alte functii lambda si decoratori
+
+    remove_old_products() -> scoate din lista din produse, marfa expirata

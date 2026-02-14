@@ -1,0 +1,21 @@
+{
+    "studenti": [
+        {
+            "name": "Calin",
+            "id": 1
+        },
+        {
+            "name": "Alex",
+            "id": 2
+        },
+        {
+            "name": "Matei",
+            "id": 5
+        }
+    ],
+    "materii": [
+        "Mate",
+        "Romana"
+    ],
+    "ora": "18:00"
+}
