@@ -1,0 +1,243 @@
+<!-- 
+HTML - HyperText Markup Language 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Visible area -->
+  <head>
+    <!-- Meta TAGs -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Name of the page -->
+    <title>Learning HTML</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/facebook.png" type="image/x-icon" />
+
+    <!-- Import external CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Style Element -->
+    <style>
+      /* 
+      Selectors - sunt folositi sa gaseasaca (sa selecteze) elementele HTML pr care dorim sa le stilizam.
+      Tipuri de selectori:
+        1. element: <p>, <h1>, <h2>, <div>, <section>, <img>, <video>, etc.;
+        2. id: #nume-id (#id-value);
+        3. class: .nume-clasa (.class-value);
+        4. select-all: * (selecteaza toate elementele).
+      */
+
+      /* Selector template:
+      selector-name {
+          property-key: value;
+      } */
+
+      /* Element selector ex. */
+      button {
+        background: #000;
+        color: #fff;
+      }
+      /* ID selector ex. */
+      #my-heading {
+        color: blue;
+        font-size: 3rem;
+        margin: 30px;
+      }
+      /* Class selector ex. */
+      .my-text {
+        color: red;
+        font-size: 2vw;
+        padding: 5px;
+      }
+      /* Select all ex. */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
+    <!-- Import external JS -->
+    <!-- Daca folosim JS in tag-ul <head> trebuie neaparat folosit impreuna cu "async defer" pt. a incarca intai <body> si apoi JS-ul. 
+    Daca nu, JS poate fi pus in <body> (la final) si nu mai trebuie "async defer" -->
+    <script src="./script.js" async defer></script>
+  </head>
+
+  <!-- Visible area -->
+  <body>
+    <!-- Paragraf (Element)-->
+    <!-- In line CSS: Using style attribute 
+    Properties are formed by template: property-name: value;
+    -->
+    <p
+      style="
+        font-size: 30px;
+        color: green;
+        text-align: center;
+        display: flex;
+        font-weight: 700;
+      "
+    >
+      <!-- font-weight merge din 100 in 100 (de la 100 pana la 900);
+      regular = 400
+      bold = 700
+      bolder = 900 -->
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis fugit
+      animi iste libero veritatis voluptatum, possimus voluptatibus in eum, nemo
+      ipsam consequatur laboriosam ducimus perspiciatis veniam aliquam iusto
+      officia beatae?
+    </p>
+
+    <!-- Heading 1 - Heading 6 -->
+    <h1 id="my-heading" class="my-text">Heading 1</h1>
+    <h2 class="my-text">Heading 2</h2>
+    <h3 class="my-text">Heading 3</h3>
+    <h4 class="my-text">Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6 id="special-heading">Heading 6</h6>
+
+    <!-- Buton (Element) -->
+    <button>Click Me!</button>
+
+    <!-- Anchor (Element) -->
+    <a href="https://www.google.com/">Go to Google</a>
+    <a href="https://www.google.com/" target="_blank"
+      >Open Google in a new tab</a
+    >
+
+    <!-- Image (Element) -->
+    <img
+      src="https://images.pexels.com/photos/34888743/pexels-photo-34888743.jpeg"
+      width="800px"
+      alt="O casa pe lac"
+    />
+
+    <!-- Video (Element) -->
+    <video
+      poster="https://images.pexels.com/photos/2091399/pexels-photo-2091399.jpeg"
+      src="https://www.pexels.com/download/video/34645629/"
+      width="700px"
+      controls
+      loop
+      muted
+    ></video>
+
+    <!-- Liste neoronate -->
+    <ul type="circle">
+      <li>Orange</li>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Peach</li>
+    </ul>
+
+    <!-- Liste oronate -->
+    <ol type="I">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+      <li>Peach</li>
+    </ol>
+
+    <!-- Tabele -->
+    <!-- 
+        TAG-uri principale:
+          <table></table>;
+          <tr> = table row;
+          <th> = table header;
+          <td> = table data;
+        TAG-uri grupari:
+          <thead> = header content;
+          <tbody> = continutul tabelului
+          <tfoot> = footer content
+      -->
+    <table class="my-table">
+      <thead>
+        <!-- Table row -->
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Release Date</th>
+          <th>Created at</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Iphone Air</td>
+          <td>2.500€</td>
+          <!-- ISO 8601 - Date Format: YYYY-MM-DD - 2025-12-02T19:16:06 -->
+          <td>2025 September 19</td>
+          <td>2023 January 10</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Samsung Galaxy S25+</td>
+          <td>1.000€</td>
+          <!-- ISO 8601 - Date Format: YYYY-MM-DD - 2025-12-02T19:16:06 -->
+          <td>2025 February 27</td>
+          <td>2023 January 10</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Lenovo IdeaPad 5 Slim</td>
+          <td>900€</td>
+          <!-- ISO 8601 - Date Format: YYYY-MM-DD - 2025-12-02T19:16:06 -->
+          <td>2025 March 5</td>
+          <td>2023 January 10</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- ex: Pagination 1, 2, 3, ... 999, back-button, next-button -->
+        <button>Back</button>
+        <div>
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>...</p>
+          <p>999</p>
+        </div>
+        <button>Next</button>
+      </tfoot>
+    </table>
+
+    <!-- Formulare -->
+    <!-- 
+      TAG-uri:
+        <form></form>;
+        <input> (text, check-box, check-box unic (radio input));
+        <label> = eticheta;
+        <button>;
+        <textarea>
+    -->
+    <form>
+      <label for="fullName">Full Name</label>
+      <input
+        id="fullName"
+        type="text"
+        placeholder="e.g. John Doe"
+        name="fullName"
+      />
+      <input type="color" />
+      <input type="date" />
+      <input type="range" />
+      <button type="reset">Reset data</button>
+      <button type="submit">Send data</button>
+    </form>
+  </body>
+</html>
+
+<!-- 
+Element = semantic (Are un rol)
+Syntax:
+<element> (Deschidere)
+    orice tag / text (Continut)
+</element> (Inchidere)
+
+Syntax:
+<img /> (Inchidere/Deschidere scurta)
+-->

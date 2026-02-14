@@ -1,0 +1,30 @@
+PIP - package manager pentru Pyhon -> ne ajuta sa instalam librarii externe in aplicatia noastra
+
+pip help
+-> va afisa toate comenzile si optiunile pentru programul pip
+
+pip install <package_name>
+exemplu: pip install pyline
+-> instaleaza un anumit package si il introduce in proiectul nostru
+-> instaleaza cea mai recenta versiune
+
+pip uninstall <package_name>
+-> sterge un anumit package instalat
+
+pip freeze
+-> afiseaza librariile instalate
+
+# Pentru a instala o versiune specifica
+exemplu: pip install <package_name>==2.0.3
+
+pip list -o
+-> afiseaza librariile care au o versiune mai recenta
+
+pip install -U <package_name>
+-> face update unei librarii deja instalate la cea mai recenta versiune
+
+pip freeze > requirements.txt
+-> scrie toate librariile folosite si versiunea lor in fisierul requirements.txt
+
+pip install -r requirements.txt
+-> citeste contintul fisierului requirements.txt si instaleaza librariile din el

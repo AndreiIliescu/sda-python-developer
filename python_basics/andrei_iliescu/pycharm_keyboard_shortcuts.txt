@@ -1,0 +1,113 @@
+================================================| CREATE AND EDIT |=====================================================
+* Alt + Enter = Afișare acțiuni intenție.
+* Ctrl + Space = Completare cod de bază.
+* Ctrl + Shift + Space = Completare cod inteligent.
+* Ctrl + Alt + Space = Completare nume tip.
+* Ctrl + Shift + Enter = Completare instrucțiune.
+* Ctrl + P / Alt + Q = Informații parametri / informații context.
+* Ctrl + Shift + I = Definiție rapidă.
+* Ctrl + Q / Shift + f1 = Documentație externă rapidă.
+* Alt + Insert = Generare cod.
+* Ctrl + O / Ctrl + I = Suprascrie / implementează membri.
+* Ctrl + Alt + T = Înconjoară cu ….
+* Ctrl + / = Comentează cu comentariu linie.
+* Ctrl + W / Ctrl + Shift + W = Extinde / micșorează selecția.
+* Ctrl + Alt + O = Optimizează importurile.
+* Ctrl + Alt + I = Indentare automată linii.
+* Ctrl + X / Ctrl + C / Ctrl + V = Cut / Copy / Paste.
+* Ctrl + Shift + C = Copiază calea documentului.
+* Ctrl + Shift + V = Lipește din istoricul clipboard-ului.
+* Ctrl + D = Duplică linia sau selecția curentă.
+* Ctrl + shift + Up / Ctrl + shift + Down = Mută linia în sus / jos.
+* Ctrl + Y = Șterge linia la semnul circumflex.
+* Ctrl + Shift + J / Ctrl + Enter = Unire / divizare linie.
+* Shift + Enter = Începe o linie nouă.
+* Ctrl + Shift + U = Comutare între majuscule și minuscule.
+* Ctrl + NumPad + / Ctrl + NumPad - = Extinde / restrânge bloc de cod.
+* Ctrl + Shift + NumPad + + / Ctrl + shift + NumPad + - = Extinde / restrânge tot.
+* Ctrl + A = Selectează toate elementele paginii.
+* Ctrl + S = Salvează tot.
+* Ctrl + Z = Undo.
+================================================| VERSION CONTROL |=====================================================
+* Alt + ` = Fereastră pop-up pentru operațiuni VCS ….
+* Ctrl + K = Commit.
+* Ctrl + T = Update Project.
+* Alt + Shift + C = Modificări recente.
+* Ctrl + Alt + Z = Revert (Revenire).
+* Ctrl + Shift + K = Push.
+* Ctrl + Alt + Shift + Down / Ctrl + Alt + Shift + Up = Modificare următoare / anterioră.
+===============================================| MASTER YOUR IDE |======================================================
+* Ctrl + Shift + A = Găsește orice acțiune în interiorul IDE-ului.
+* Alt + [0-9] = Deschide o fereastră de instrumente.
+* Ctrl + Alt + Y = Synchronize.
+* Ctrl + ` = Schema de comutare rapidă….
+* Ctrl + Alt + S = Settings.
+* F4 + Alt + Home = Salt la bara sursă / navigare.
+* F12 = Salt la ultima fereastră de instrumente.
+* Shift + Est / Ctrl + Shift + F12 = Ascunde toate ferestrele active / toate ferestrele de instrumente.
+* Alt + Right / Alt + Left = Salt la fila următoare / anterioră a editorului.
+* Esc = Salt la editor (dintr-o fereastră de instrumente).
+* Ctrl + Shift + F4 / Ctrl + F4 = Închide fila / fereastra activă.
+==============================================| FIND EVERYTHING |=======================================================
+* Double Shift = Căutare peste tot.
+* Ctrl + F / Ctrl + R = Find / replace.
+* Ctrl + Shift + F / Ctrl + Shift + R = Găsire în cale / Înlocuire în cale.
+* F3 / Shift + F3 = Apariție următoare / anterioră.
+* Ctrl + F3 = Găsire cuvânt la semnul circumflex.
+* Ctrl + N / Ctrl + Shift + N = Merge la clasă / fișier.
+* Ctrl + F12 = Merge la fișier membru.
+* Ctrl + Alt + Shift + N = Merge la simbol.
+============================================| NAVIGATE FROM SYMBOLS |===================================================
+* Ctrl + B = Declarație.
+* Ctrl + Shift + B = Declarație de tip (doar JavaScript).
+* Ctrl + U = Super metodă.
+* Ctrl + Alt + B = Implementare(Implementări).
+* Alt + F7 / Ctrl + F7 = Găsire utilizări / Găsire utilizări în fișier.
+* Ctrl + Shift + F7 = Evidențiere utilizări în fișier.
+* Ctrl + Alt + F7 = Afișare utilizări.
+============================================| REFACTOR AND CLEAN UP |===================================================
+* Ctrl + Alt + Shift + T = Refactor.
+* F5 / F6 = Copiere… / Mutare….
+* Alt + Delete = Ștergere în siguranță….
+* Shift + F6 = Rename….
+* Ctrl + F6 = Modificare semnătură….
+* Ctrl + Alt + N = În linie….
+* Ctrl + Alt + M = Extragere metodă.
+* Ctrl + Alt + V / Ctrl + Alt + P = Introducere variabilă / parametru.
+* Ctrl + Alt + F / Ctrl + Alt + C = Introducere câmp / constantă.
+* Ctrl + Alt + L = Reformatare cod.
+=============================================| ANALYZE AND EXPLORE |====================================================
+* Ctrl + F1 = Afișare descriere eroare.
+* F2 / Shift + F2 = Următoarea / eroare evidențiată.
+* Ctrl + Alt+ Shift + I = Următoarea / eroare evidențiată.
+* Ctrl + H / Ctrl + Alt + H = Ierarhie de tip / apel.
+=============================================| NAVIGATE IN CONTEXT |====================================================
+* Alt + F1 = Selectați în….
+* Ctrl + E / Ctrl + Shift + E = Locații vizualizate recent / recente.
+* Ctrl + Shift + Back = Ultima locație de editare.
+* Ctrl + Alt + Left / Ctrl + Alt + Right = Navigare înapoi / înainte.
+* Alt + Up / Alt + Down = Salt la metoda anterioară / următoare.
+* Ctrl + G = Salt la linie / coloană….
+* Ctrl + ] / Ctrl + [ = Salt la sfârșitul / începutul blocului de cod.
+* Alt + Shift + F = Adaugă la favorite.
+* F11 = Comutare marcaj.
+* Ctrl + F11 = Comutare marcaj cu mnemonic.
+* Ctrl + [0-9] = Salt la marcaj numerotat.
+* Shift + F11 = Afișare marcaje.
+============================================| BUILD, RUN, AND DEBUG |===================================================
+* Ctrl + Shift + F10 = Configurație context de rulare.
+* Alt + Shift + F10 / Alt + Shift + F9 = Rulare / depanare configurație selectată.
+* Shift + F10 / Shift + F9 = Rulare / depanare configurație curentă.
+* F8 / F7 = Step over / into.
+* Shift + F7 = Smart step into.
+* Shift + F8 = Smart out.
+* Alt + F9 / Ctrl + Alt + F9 = Rulare la cursor / Forțare rulare la cursor.
+* Alt + F10 = Afișare punct de execuție.
+* Alt + F8 = Evaluare expresie….
+* Ctrl + F2 = Stop.
+* Ctrl + Shift + F2 = Oprire procese în fundal….
+* F9 = Reluare program.
+* Ctrl + F8 = Comutare punct de întrerupere linie.
+* Ctrl + Alt + Shift + F8 = Comutare punct de întrerupere linie temporar.
+* Ctrl + Shift + F8 = Editare/vizualizare punct de întrerupere.
+========================================================================================================================

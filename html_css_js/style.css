@@ -1,0 +1,77 @@
+/* 
+CSS - Cascading Style Sheets
+*/
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(4, 123, 221, 0.5),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+img {
+  height: 300px;
+  /* Toate laturile */
+  /* Margin este un spatiu mort */
+  margin: 30px;
+  /* Top -> Right -> Bottom -> Left */
+  margin: 30px 20px 15px 30px;
+  /* Toate laturile */
+  /* Padding se poate umple cu culoare/imagine/etc. */
+  padding: 30px;
+  /* Preia spatiul disponibil (inclusiv padding) */
+  background: #9a9fcd;
+
+  /* width -> type -> color */
+  border: 2px solid #1427d6;
+  /* Using specific properties to obtain the same result */
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1427d6;
+  /* border-radius: top left corner -> top right corner -> bottom right corner -> bottom left corner */
+  border-radius: 50% 50% 50% 50%;
+}
+
+/*
+Sisteme de pozitionare a elementelor:
+- Floats -> cel mai vechi (nu prea mai este folosit deloc);
+- Flexbox -> layout system used to align elements within HTML page;
+- Grid -> layout system used to align elements within HTML page;
+*/
+
+/*
+display property values:
+- none -> poate fi ascus intentionat;
+- inline -> in linie;
+- inline-block -> la fel ca inline, dar consuma un spatiu;
+- block;
+- flex -> Flexbox;
+- grid -> Grid
+- 
+*/
+
+body {
+  /* Default: arata elementele pe un rand */
+  display: flex;
+
+  /* set direction: row or column (row-reverse, column-reverse */
+  flex-direction: column;
+
+  /* Folosite pt. alinierea elementelor pe axa X si Y */
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Gap = distanta intre elementele cu flex aplicat */
+  gap: 100px;
+}
+
+/* Constrangere unica pt. dispozitivele sub 500px latime */
+@media screen and (max-width: 500px) {
+  img {
+    /* modific daor proprietatile necesare */
+    border-radius: 25%;
+    border-color: red;
+    padding: 15px;
+  }
+}

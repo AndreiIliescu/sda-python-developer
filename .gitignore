@@ -1,0 +1,128 @@
+# =============== PYTHON =============== #
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env/
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+/build/
+/develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.pyo
+*.pyd
+
+# =============== DJANGO =============== #
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static_root/
+# Dacă vrei să incluzi static/ în repo, comentează linia de mai jos
+# static/
+
+# =============== CONFIGURATII SENSIBILE (ENVIRONMENTAL VARIABLES) =============== #
+.env
+.env.*
+!.env.example
+env.ini
+.flaskenv
+secrets.json
+*.key
+*.pem
+
+# =============== TESTARE SI ACOPERIRE =============== #
+htmlcov/
+.tox/
+.nox/
+.nosetests
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.cache
+
+# =============== IDE-URI SI EDITOARE =============== #
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# =============== NODE/FRONTEND (dacă folosești Webpack sau Tailwind) =============== #
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.log
+package-lock.json
+# Dacă preferi yarn, comentează linia de mai sus și decomentează:
+# yarn.lock
+
+# =============== CELERY (dacă îl folosești) =============== #
+celerybeat-schedule
+celerybeat.pid
+
+# =============== BACKUP SI TEMPORARE =============== #
+*.bak
+*.tmp
+*.temp
+
+# =============== DOCKER (dacă îl folosești) =============== #
+docker-compose.override.yml
+.dockerignore
+
+# =============== MIGRATIONS (opțional - de obicei NU le ignori) =============== #
+# migrations/
+# !migrations/__init__.py
+
+# =============== DEPENDENTE =============== #
+jspm_packages/
+bower_components/
+
+# =============== BUILD / OUTPUT =============== #
+out/
+.tmp/
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+# =============== LOGS =============== #
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =============== TOOLING =============== #
+.eslintcache
+.stylelintcache
+
+# =============== MISC =============== #
+*.tgz

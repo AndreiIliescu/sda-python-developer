@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table model</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <!-- Table row -->
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Release Date</th>
+          <th>Created at</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Iphone Air</td>
+          <td>2.500€</td>
+          <!-- ISO 8601 - Date Format: YYYY-MM-DD - 2025-12-02T19:16:06 -->
+          <td>2025 September 19</td>
+          <td>2023 January 10</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Samsung Galaxy S25+</td>
+          <td>1.000€</td>
+          <td>2025 February 27</td>
+          <td>2023 January 10</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Lenovo IdeaPad 5 Slim</td>
+          <td>900€</td>
+          <td>2025 March 5</td>
+          <td>2023 January 10</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- ex: Pagination 1, 2, 3, ... 999, back-button, next-button -->
+        <button>Back</button>
+        <div>
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>...</p>
+          <p>999</p>
+        </div>
+        <button>Next</button>
+      </tfoot>
+    </table>
+  </body>
+</html>
