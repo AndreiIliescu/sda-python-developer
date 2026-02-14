@@ -24,16 +24,20 @@
 # produs(id, denumire, cantitate, pret)
 # istoric(id, user_id, produs_id, data_cumparare, cantitate_cumparata)
 
+from dotenv import load_dotenv
+import os
 import mysql.connector as mysql
 import datetime
 
 
+load_dotenv()
+
 def create_structure():
     
     db = mysql.connect(
-        host = 'localhost',
-        user = 'root',
-        password = '#t*W3*z5+a77I!P@+173'
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
     )
     
     with db.cursor() as c:

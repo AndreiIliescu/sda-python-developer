@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Movies List</h1>
+
+    <br />
+
+    <div class="cards">
+        {% for movie in movies_html %}
+            <div class="card">
+                {% if movie.photo %}
+                    <img src="{{ movie.photo.url }}" />
+                {% endif %}
+                <h3><b>{{ movie.title }}</b></h3>
+                <p><i>{{ movie.description }}</i></p>
+                <p>{{ movie.year }}</p>
+            </div>
+            <a href="{% url 'spre_film' movie.pk %}">Vezi detalii</a>
+        {% endfor %}
+    </div>
+{% endblock %}

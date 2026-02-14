@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <title>Movies</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="{% url 'home' %}" class="logo">Movies Site</a>
+            <ul class="nav_links">
+                <li>
+                    <a href="{% url 'create' %}">Add Movie</a>
+                </li>
+
+                <li>
+                    <a href="#">Update Movie</a>
+                </li>
+
+                <li>
+                    <a href="#">Delete Movie</a>
+                </li>
+
+                {% if user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'watchlist' %}">Watch List</a>
+                    </li>
+                {% endif %}
+
+                {% if user.is_authenticated %}
+                    <p>{{ user.username }}</p> | <a href="{% url 'logout' %}">Log Out</a>
+                {% else %}
+                    <li>
+                        <a href="{% url 'login' %}">Log In</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <br />
+
+    <main>
+        <section>
+            {% block content %}
+            {% endblock %}
+        </section>
+    </main>
+
+    <br />
+
+    <footer>
+        <p>
+            <strong>
+                © 2026 Copyright Movie Website. All Rights Reserved
+            </strong>
+        </p>
+    </footer>
+</body>
+</html>

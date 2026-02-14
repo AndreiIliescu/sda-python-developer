@@ -12,17 +12,32 @@
 # declarative_base - baza pt. definirea claselor
 # sessionmaker - util pt. a creasesiuni de lucru cu baza de date
 
+from dotenv import load_dotenv
+import os
 from sqlalchemy import create_engine, Column, Integer, String, text
 from sqlalchemy.orm import declarative_base, sessionmaker
 
+
+load_dotenv()
 
 # =================================
 # Configurare baza de date
 # =================================
 
+DB_DRIVER = os.getenv("DB_DRIVER")
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_NAME = os.getenv("DB_NAME")
+
+DATABASE_URL = f"{DB_DRIVER}://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}"
+DATABASE_WITH_DB = f"{DATABASE_URL}/{DB_NAME}"
+
+
 def create_database():
     
-    temp_engine = create_engine('mysql+pymysql://root:#t*W3*z5+a77I!P%40+173@localhost:3306')
+    temp_engine = create_engine(DATABASE_URL)
     
     with temp_engine.connect() as connection:
         result = connection.execute(text("show databases like 'students_db'"))
@@ -39,7 +54,7 @@ create_database()
 
 Base = declarative_base()
 
-engine = create_engine('mysql+pymysql://root:#t*W3*z5+a77I!P%40+173@localhost:3306/students_db')
+engine = create_engine(DATABASE_WITH_DB)
 
 Session = sessionmaker(bind=engine)
 session = Session()
@@ -93,8 +108,7 @@ def update_student(student_id, new_name=None, new_email=None):
     
     if not student:
         print("Studentul nu a fost gasit.")
-        return        # punem un return simplu, fara variabila sau altceva, fiindca in cazul in care nu gasim vreun student,
-                      # functia sa se opreasca imediat
+        return
     
     if new_name:
         student.name = new_name

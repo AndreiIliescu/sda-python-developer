@@ -1,12 +1,16 @@
+from dotenv import load_dotenv
+import os
 import mysql.connector as mysql
 from fisier_import_date import lista_clienti, lista_filme, lista_sali, lista_bilete
 
 
+load_dotenv()
+
 db = mysql.connect(
-    host = 'localhost',
-    user = 'root',
-    password = '#t*W3*z5+a77I!P@+173',
-    database = 'cinematograf'
+    host=os.getenv("DB_HOST"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    database=os.getenv("DB_NAME_2")
 )
 
 with db.cursor() as c:

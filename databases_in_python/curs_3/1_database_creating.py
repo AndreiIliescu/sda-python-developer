@@ -5,13 +5,17 @@
 # sali (id, denumire, capacitate, vip)
 # bilete (id, film_id, client_id, sala_id, pret, data_ora)
 
+from dotenv import load_dotenv
+import os
 import mysql.connector as mysql
 
 
+load_dotenv()
+
 db = mysql.connect(
-    host = 'localhost',
-    user = 'root',
-    password = '#t*W3*z5+a77I!P@+173',
+    host=os.getenv("DB_HOST"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
 )
 
 # "with" este folosit pt. a gestiona automat resursele (cursorul)

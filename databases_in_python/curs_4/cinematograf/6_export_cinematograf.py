@@ -1,12 +1,17 @@
+from dotenv import load_dotenv
+import os
 import mysql.connector
 import xlsxwriter
 
+
+load_dotenv()
+
 def fetch_data_table(table_name):
     db = mysql.connector.connect(
-        host='localhost',
-        user='root',
-        password='#t*W3*z5+a77I!P@+173',
-        database='cinematograf'
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        database=os.getenv("DB_NAME_2")
     )
     
     cursor = db.cursor()
