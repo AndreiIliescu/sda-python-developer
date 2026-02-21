@@ -29,6 +29,7 @@ This repository contains all the code I wrote during the **Python Developer From
 - [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
 - [About the Bootcamp](#about-the-bootcamp)
+- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -335,6 +336,12 @@ This repository documents work completed during the **Python Developer From Scra
 | Focus | Full-stack Python development, from basics to production-ready Django applications |
 
 The curriculum covers 14 modules, from Python fundamentals to a final team project built following Scrum methodology.
+
+---
+
+## Contributing
+
+This repository is personal coursework. It is not open for contributions. If you are following the same course and have questions, feel free to reach out via the contact details below.
 
 ---
 
