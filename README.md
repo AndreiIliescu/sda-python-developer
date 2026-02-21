@@ -149,7 +149,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/sda_python_developer_from_scratch.git
+git clone https://github.com/AndreiIliescu/sda_python_developer_from_scratch.git
 cd sda_python_developer_from_scratch
 ```
 
