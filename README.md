@@ -17,6 +17,7 @@ This repository contains all the code I wrote during the **Python Developer From
 ## Table of Contents
 
 - [About](#about)
+- [Certificate of Completion](#certificate-of-completion)
 - [What I Learned](#what-i-learned)
 - [Tech Stack](#tech-stack)
 - [Repository Structure](#repository-structure)
@@ -38,6 +39,12 @@ This repository contains all the code I wrote during the **Python Developer From
 This is a personal learning repository. It documents my progress through a structured Python bootcamp that covers backend development, databases, testing, algorithms, design patterns, and frontend basics.
 
 Every folder corresponds to a module from the course curriculum. The code here ranges from introductory exercises to a working Django web application with authentication, models, views, and templates.
+
+---
+
+## Certificate of Completion
+
+![Certificate of Completion](https://)
 
 ---
 
