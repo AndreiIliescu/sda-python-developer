@@ -1,128 +1,393 @@
-# =============== PYTHON =============== #
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
-.env/
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
-/build/
-/develop-eggs/
+build/
+develop-eggs/
 dist/
 downloads/
 eggs/
+.eggs/
 lib/
 lib64/
 parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-*.pyo
-*.pyd
+MANIFEST
 
-# =============== DJANGO =============== #
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-media/
-staticfiles/
-static_root/
-# Dacă vrei să incluzi static/ în repo, comentează linia de mai jos
-# static/
+# PyInstaller
+*.manifest
+*.spec
 
-# =============== CONFIGURATII SENSIBILE (ENVIRONMENTAL VARIABLES) =============== #
-.env
-.env.*
-!.env.example
-env.ini
-.flaskenv
-secrets.json
-*.key
-*.pem
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# =============== TESTARE SI ACOPERIRE =============== #
+# Unit test / coverage reports
 htmlcov/
 .tox/
 .nox/
-.nosetests
 .coverage
 .coverage.*
-.pytest_cache/
-.hypothesis/
-.mypy_cache/
-.dmypy.json
-dmypy.json
-.ruff_cache/
+.cache
 nosetests.xml
 coverage.xml
 *.cover
-.cache
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytest_cache/
+pytestdebug.log
 
-# =============== IDE-URI SI EDITOARE =============== #
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-Thumbs.db
-*.sublime-project
-*.sublime-workspace
+# Translations
+*.mo
+*.pot
 
-# =============== NODE/FRONTEND (dacă folosești Webpack sau Tailwind) =============== #
-node_modules/
-npm-debug.log
-yarn-error.log
-yarn.log
-package-lock.json
-# Dacă preferi yarn, comentează linia de mai sus și decomentează:
-# yarn.lock
+# Sphinx documentation
+docs/_build/
+docs/_autosummary/
 
-# =============== CELERY (dacă îl folosești) =============== #
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582
+__pypackages__/
+
+# Celery
 celerybeat-schedule
 celerybeat.pid
 
-# =============== BACKUP SI TEMPORARE =============== #
-*.bak
-*.tmp
-*.temp
+# SageMath parsed files
+*.sage.py
 
-# =============== DOCKER (dacă îl folosești) =============== #
-docker-compose.override.yml
-.dockerignore
+# Environments
+.env
+.env.*
+.env.local
+.env.development
+.env.staging
+.env.production
+!.env.example
+venv/
+env/
+ENV/
+.venv/
+venv.bak/
 
-# =============== MIGRATIONS (opțional - de obicei NU le ignori) =============== #
-# migrations/
-# !migrations/__init__.py
+# Spyder project settings
+.spyderproject.db
+.spyproject
 
-# =============== DEPENDENTE =============== #
-jspm_packages/
-bower_components/
+# Rope project settings
+.ropeproject
 
-# =============== BUILD / OUTPUT =============== #
-out/
-.tmp/
-.parcel-cache/
-.next/
-.nuxt/
-.svelte-kit/
+# mkdocs documentation
+/site
 
-# =============== LOGS =============== #
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Profiling output
+*.prof
+
+# Serialized data (pickle files with runtime state)
+*.pickle
+*.pkl
+
+# =============================================================================
+# DJANGO
+# =============================================================================
+
+# Local settings override
+local_settings.py
+settings_local.py
+
+# Database files (development)
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+
+# Django static files collected by collectstatic
+staticfiles/
+static_root/
+/static/collected/
+collected_static/
+
+# Django media files uploaded by users
+media/
+/media/
+
+# Django migrations (keep __init__.py, ignore compiled cache)
+# Uncomment the next line only if your team regenerates migrations from scratch
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Django secret key and sensitive config (already covered by .env above)
+
+# Django cache
+django_cache/
+
+# =============================================================================
+# DATABASES
+# =============================================================================
+
+# SQLite (development)
+*.db
+*.sqlite
+*.sqlite3
+
+# MySQL dump files
+*.sql
+*.dump
+
+# PostgreSQL dump files
+*.pgdump
+*.backup
+
+# Database credentials files (already covered by .env)
+
+# =============================================================================
+# FRONTEND (HTML5 / CSS / Vanilla JavaScript)
+# =============================================================================
+
+# Node.js (if you ever add a build step with npm/yarn)
+node_modules/
 npm-debug.log*
 yarn-debug.log*
-pnpm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
 
-# =============== TOOLING =============== #
+# Build output from frontend tooling (Webpack, Vite, Parcel, etc.)
+dist/
+build/
+.parcel-cache/
+.vite/
+.cache/
+
+# Sass / Less compiled output
+*.css.map
+*.scss.map
+
+# Source maps (optional: keep if you want stack traces in production)
+*.js.map
+
+# Minified files auto-generated by build tools
+*.min.js
+*.min.css
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# EDITORS AND IDES
+# =============================================================================
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+\#*\#
+.\#*
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Spyder
+.spyderproject.db
+.spyproject
+
+# =============================================================================
+# LOGS AND RUNTIME FILES
+# =============================================================================
+
+*.log
+*.log.*
+logs/
+log/
+*.pid
+*.seed
+*.pid.lock
+
+# Django-specific log files
+django.log
+gunicorn.log
+gunicorn-access.log
+gunicorn-error.log
+
+# =============================================================================
+# SECRETS AND SENSITIVE FILES
+# =============================================================================
+
+# Secret keys, tokens, credentials
+secrets.py
+secrets.json
+credentials.json
+service_account.json
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# AWS
+.aws/
+credentials
+
+# =============================================================================
+# TEMPORARY AND CACHE FILES
+# =============================================================================
+
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*.swo
+.sass-cache/
 .eslintcache
 .stylelintcache
 
-# =============== MISC =============== #
-*.tgz
+# =============================================================================
+# DEPLOYMENT AND CI/CD
+# =============================================================================
+
+# Docker
+.dockerignore
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+
+# =============================================================================
+# PROJECT-SPECIFIC (based on your repo structure)
+# =============================================================================
+
+# Excel files used as import data (keep only if they are source data you want versioned)
+# If these are generated exports, ignore them:
+*.xlsx
+*.xls
+*.csv
+
+# Image files in static folders (large assets should use a CDN or Git LFS)
+# Comment this out if you want to track your static images in Git
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.svg
+# *.webp
+# *.ico
+
+# Compiled Python package artifacts (from python_technology/my_package)
+*.tar.gz
+*.whl
+*.egg-info/
+
+# Text files generated at runtime (profiling output, thread timing)
+no_threads.txt
+with_threads.txt
